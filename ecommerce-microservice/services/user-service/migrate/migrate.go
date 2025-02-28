@@ -2,9 +2,9 @@ package main
 
 
 import (
-  "github.com/HarshithRajesh/Microservices_api/ecommerce-microservice/user-service/initializers"
+  "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service/initializers"
   "log"
-  "github.com/HarshithRajesh/Microservices_api/ecommerce-microservice/user-service/model"
+  "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service/model"
 )
 
 
