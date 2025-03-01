@@ -16,7 +16,7 @@ func AddUser(c *gin.Context){
   var authInput model.SignUp
   
   if err := c.ShouldBindJSON(&authInput); err != nil{
-    c.JSON(http.StatusBadRequest,gin.H{"error":"email already exists"})
+    c.JSON(http.StatusBadRequest,gin.H{"error":"Input is blank"})
     return
   }
   var users model.Users
@@ -36,7 +36,7 @@ func AddUser(c *gin.Context){
     return 
   }
 
-  c.JSON(http.StatusOK,gin.H{"status":0,"User":user})
+  c.JSON(http.StatusOK,gin.H{"status":1,"User":user})
   
 
 }

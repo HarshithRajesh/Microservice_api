@@ -1,13 +1,19 @@
 package model
 
-import "time"
+type Product struct {
+	ID          int       `json:"id" gorm:"primaryKey;autoIncrement"`
+	Name        string    `json:"name" gorm:"not null"`
+	Description string    `json:"description"`
+	Price       float64   `json:"price" gorm:"not null"`
+	Stock       int       `json:"stock" gorm:"not null"`
+  CreatedAt   string    `gorm:"default:now()" json:"created_at"`
+  UpdatedAt   string    `gorm:"default:now()" json:"updated_at"`
 
-type Products struct {
-        ID          int       `json:"id"`
-        Name        string    `json:"name"`
-        Description string    `json:"description"`
-        Price       float64   `json:"price"`
-        Stock       int       `json:"stock"`
-        CreatedAt   time.Time `json:"created_at"`
-        UpdatedAt   time.Time `json:"updated_at"`
+}
+
+type CreateProduct struct {
+	Name        string  `json:"name" binding:"required"`
+	Description string  `json:"description"`
+	Price       float64 `json:"price" binding:"required"`
+	Stock       int     `json:"stock" binding:"required"`
 }

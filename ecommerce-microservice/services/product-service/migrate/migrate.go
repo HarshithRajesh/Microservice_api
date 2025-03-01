@@ -13,7 +13,7 @@ func init (){
 
 func main(){
   log.Println("Starting the migration")
-  err := initializers.DB.AutoMigrate(&model.Products{})
+  err := initializers.DB.AutoMigrate(&model.Product{})
   if err != nil {
     log.Fatal("Failed migration")
   }else {

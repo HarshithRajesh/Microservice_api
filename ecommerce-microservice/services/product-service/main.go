@@ -14,5 +14,6 @@ func init(){
 func main(){
   r := gin.Default()
   r.GET("/health",controllers.HealthCheck)
+  r.POST("/add",controllers.AddProduct)
   r.Run(":8081")
 }
