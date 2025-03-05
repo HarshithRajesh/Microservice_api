@@ -9,6 +9,7 @@ services:
       - ./services/user-service/.env
     ports:
       - "8080:8080"
+      - "50051:50051"
     depends_on:
       - postgres
     networks:
@@ -24,6 +25,7 @@ services:
       - "8081:8081"
     depends_on:
       - postgres_1
+      - user-service
     networks:
       - app-network
 

@@ -9,11 +9,14 @@ import (
 func init(){
   initializers.LoadEnvs()
   initializers.ConnectDB()
+  initializers.GRPCClient()
+
 }
 
 func main(){
   r := gin.Default()
   r.GET("/health",controllers.HealthCheck)
   r.POST("/add",controllers.AddProduct)
+  r.GET("/users/:user_id",controllers.GetuserDetails)
   r.Run(":8081")
 }

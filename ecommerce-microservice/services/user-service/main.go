@@ -10,6 +10,7 @@ import (
 func init(){
   initializers.LoadEnvs()
   initializers.ConnectDB()
+  initializers.GrpcServer()
 }
 func main(){
   r:=gin.Default()
