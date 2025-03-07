@@ -1,10 +1,13 @@
 module github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service
 
-go 1.24.0
+go 1.24
 
 require (
+  github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto v1.0.0
+	github.com/HarshithRajesh/Microservice_api v0.0.0-20250305152044-1e1bdd3babd5
 	github.com/gin-gonic/gin v1.10.0
 	github.com/joho/godotenv v1.5.1
+	google.golang.org/grpc v1.70.0
 	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.25.12
 )
@@ -20,7 +23,6 @@ require (
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.20.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
-	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
 	github.com/jackc/pgx/v5 v5.5.5 // indirect
@@ -45,7 +47,8 @@ require (
 	golang.org/x/sys v0.30.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250219182151-9fdb1cabc7b2 // indirect
-	google.golang.org/grpc v1.70.0 // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto => ../../proto/userpb/

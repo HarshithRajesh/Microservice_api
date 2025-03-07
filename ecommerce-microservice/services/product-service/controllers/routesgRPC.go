@@ -4,7 +4,7 @@ import (
   "context"
   "net/http"
   "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto/userpb"
-  "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/services/product-service/initializers"
+  "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/product-service/initializers"
   "time"
   "github.com/gin-gonic/gin"
 )

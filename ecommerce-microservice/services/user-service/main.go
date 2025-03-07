@@ -5,12 +5,13 @@ import (
   "github.com/gin-gonic/gin"
   "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service/controllers"
   "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service/initializers"
+  "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service/grpcserver"
 
 )
 func init(){
   initializers.LoadEnvs()
   initializers.ConnectDB()
-  initializers.GrpcServer()
+  grpcserver.GrpcServer()
 }
 func main(){
   r:=gin.Default()

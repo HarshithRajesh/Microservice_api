@@ -1,10 +1,11 @@
-package controllers
+package grpcserver
 
 import (
   "context"
   "log"
   pb "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto/userpb"
-  "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/services/user-service/model"
+  // pb "../../proto/userpb"
+  "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service/model"
 )
 
 type UserServiceServer struct (

@@ -1,7 +1,9 @@
 syntax = "proto3";
 
 package users;
-option go_package ="proto/userpb";
+
+//option go_package = "github.com/HarshithRajesh/Microservice_api/proto/userpb;userpb";
+option go_package ="./userpb";
 
 
 service UserService {
@@ -18,4 +20,4 @@ message UserResponse{
     string email = 3;
   }
 
-//commit
+
