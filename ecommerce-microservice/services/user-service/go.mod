@@ -1,13 +1,12 @@
 module github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service
 
-go 1.24
+go 1.24.0
 
 require (
   github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto v1.0.0
-	github.com/HarshithRajesh/Microservice_api v0.0.0-20250305152044-1e1bdd3babd5
 	github.com/gin-gonic/gin v1.10.0
 	github.com/joho/godotenv v1.5.1
-	google.golang.org/grpc v1.70.0
+	google.golang.org/grpc v1.71.0
 	gorm.io/driver/postgres v1.5.11
 	gorm.io/gorm v1.25.12
 )
@@ -51,4 +50,3 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto => ../../proto/userpb/

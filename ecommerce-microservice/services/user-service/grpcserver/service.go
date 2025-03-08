@@ -3,8 +3,9 @@ package grpcserver
 import (
   "context"
   "log"
-  pb "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto/userpb"
+  // pb "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/proto/userpb"
   // pb "../../proto/userpb"
+  "ecommerce-microservice/proto/userpb"
   "github.com/HarshithRajesh/Microservice_api/ecommerce-microservice/user-service/model"
 )
 
